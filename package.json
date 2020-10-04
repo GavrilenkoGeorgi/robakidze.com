@@ -1,0 +1,19 @@
+{
+  "name": "robakidze.com",
+  "version": "0.0.1",
+  "description": "Robakidze personal site",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass --watch sass:css --style compressed"
+  },
+  "keywords": [
+    "personal",
+    "web",
+    "site"
+  ],
+  "author": "Gavrilenko",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.26.11"
+  }
+}
