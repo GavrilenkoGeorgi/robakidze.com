@@ -1,10 +1,11 @@
 {
   "name": "robakidze.com",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Robakidze personal site",
   "main": "index.js",
   "scripts": {
-    "sass:watch": "sass --watch sass:css --style compressed"
+    "sass:watch": "sass --watch sass:css --style compressed",
+    "eslint": "eslint ."
   },
   "keywords": [
     "personal",
@@ -13,7 +14,10 @@
   ],
   "author": "Gavrilenko",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.26.11"
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-plugin-html": "^6.1.0",
+    "sass": "^1.27.0"
   }
 }
