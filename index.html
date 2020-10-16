@@ -14,7 +14,15 @@
 		<meta property="og:url" content="https://robakidze.com">
 		<meta property="og:type" content="website">
 		<!-- Styles -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<link
+			rel="preload"
+			as="style"
+			id="bootstrap-css"
+			onload="this.rel='stylesheet'"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+			crossorigin="anonymous"
+		>
 		<link
 			rel="preload"
 			id="stylesheet"
@@ -38,13 +46,13 @@
 		<header class="position-absolute">
 			<nav>
 				<a href="#about">Про мене</a>
-				<a href="#elections-info">Вибори</a>
 				<a href="#program">Виборча&nbsp;програма</a>
+				<a href="#elections-info">Вибори</a>
 			</nav>
 		</header>
 		<main>
 			<section class="parallax hero-image d-flex justify-content-center">
-				<div class="lax title container mb-2 mb-sm-0 d-flex align-items-end" data-lax-translate-y="0 1, 200 -50" data-lax-opacity="0 1, 200 0">
+				<div class="lax title container mt-1 mt-sm-5 d-flex align-items-end" data-lax-translate-y="0 1, 200 -50" data-lax-opacity="0 1, 200 0">
 					<div class="row">
 						<div class="col-12 my-3">
 							<h1>
@@ -77,8 +85,8 @@
 								<div class="container">
 									<div class="row mt-3 justify-content-center social-icons">
 										<a href="https://www.facebook.com/LilyaRobakidze"
-											alt="Посиланна на мою сторінку у Фейсбуці"
-											aria-label="Посиланна на мою сторінку у Фейсбуці" target="_blank" rel="noopener"
+											alt="Посилання на мій профіль у Фейсбуці"
+											aria-label="Посилання на мій профіль у Фейсбуці" target="_blank" rel="noopener"
 											>
 											<svg xmlns="http://www.w3.org/2000/svg"
 												class="facebook-icon"
@@ -90,8 +98,8 @@
 											</svg>
 										</a>
 										<a href="https://www.youtube.com/channel/UCuzXhxCq2aQPoMJ6S49xdjQ"
-											alt="Посиланна на мій канал на Ютубі"
-											aria-label="Посиланна на мій канал на Ютубі" target="_blank" rel="noopener"
+											alt="Посилання на мій канал на Ютубі"
+											aria-label="Посилання на мій канал на Ютубі" target="_blank" rel="noopener"
 											>
 											<svg xmlns="http://www.w3.org/2000/svg"
 												class="youtube-icon"
@@ -106,12 +114,14 @@
 								</div>
 							</div>
 							<div class="col-12 col-sm-8 1mb-3 1mt-sm-0">
-								<h2 id="about" class="text-center text-sm-left">Про мене</h2>
-								<div class="mb-3 motto">
+								<h2 id="about" class="text-center">Про мене</h2>
+								<div class="mb-3 py-sm-4 motto">
 									<p>Депутат – це не «слуга», «міцний господарник» або «професіонал-управлінець».</p>
 									<p>Перш за все це звичайна людина, якій не все одно, де і в яких умовах живе він і його сусіди.</p>
 								</div>
-								<h4 class="mt-3 text-center text-sm-left"><em>Професійна діяльність</em></h4>
+								<h3 class="mt-3 text-muted text-center text-sm-left">
+									<em>Професійна діяльність</em>
+								</h3>
 								<p class="no-indent"><strong><em>
 									Заступник директора з методичної роботи<br />
 									Викладач по класу саксофону
@@ -177,8 +187,8 @@
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-12 col-sm-8">
-								<h2 id="program">Виборча програма</h2>
-								<h5 class="my-3 text-muted"><em>Основні тези моєї програми</em></h4>
+								<h2 id="program" class="text-center my-sm-3">Виборча програма</h2>
+								<h3 class="my-3 text-muted"><em>Основні тези моєї програми</em></h3>
 								<p class="no-indent">
 									<strong>&#8729;</strong> сприяння збереженню та розвитку Шпитьківської дитячої школи мистецтв;<br />
 									<strong>&#8729;</strong> вдосконалення схеми транспортних маршрутів передмістя з урахуванням інтересів жителів села;<br />
@@ -211,7 +221,11 @@
 								</p>
 								<p>
 									Я обіцяю працювати прозоро, відкрито і чесно на користь жителів села
-									Личанка та всієї Дмитрівської ОТГ.
+									Личанка та всієї Дмитрівської ОТГ. Поставити мені запитання ви можете на моїй
+									<a
+										alt="Посилання на мою офиційну сторінку у Фейсбуці"
+										aria-label="Посилання на мою офиційну сторінку у Фейсбуці" target="_blank" rel="noopener"
+										href="https://www.facebook.com/LilyaRobakidze">сторінці у Facebook</a>.
 								</p>
 								<p>
 									<strong>Я готова взяти на себе відповідальність за наше село у складі ОТГ.</strong>
@@ -238,9 +252,17 @@
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-12">
-								<h2 id="elections-info">Про вибори</h2>
+								<h2 id="elections-info" class="text-center my-sm-3">Про вибори</h2>
 								<div class="video-container mt-4">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/nbdZy6YhmbY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+									<iframe
+										title="Місцеві вибори 2020. Все, що треба знати про нові правила голосування."
+										width="560"
+										height="315"
+										src="https://www.youtube.com/embed/nbdZy6YhmbY"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									>
 									</iframe>
 								</div>
 							</div>
